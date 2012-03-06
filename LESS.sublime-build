@@ -1,0 +1,11 @@
+{
+	"cmd": ["lessc", "$file", "${file_path}/${file_base_name}.css", "--verbose"],
+	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+	"selector": "source.css.less",
+	"path": "/usr/local/bin:$PATH",
+
+	"windows":
+	{
+		"cmd": ["dotless.Compiler.exe", "$file"]
+	}
+}
