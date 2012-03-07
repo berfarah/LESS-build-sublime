@@ -2,7 +2,11 @@
 	"cmd": ["lessc", "$file", "${file_path}/${file_base_name}.css", "-x", "--verbose"],
 	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
 	"selector": "source.css.less",
-	"path": "/usr/local/bin:$PATH",
+
+	"osx":
+	{
+		"path": "/usr/local/bin:$PATH"
+	},
 
 	"windows":
 	{
