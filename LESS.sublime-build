@@ -10,6 +10,7 @@
 
 	"windows":
 	{
-		"cmd": ["dotless.Compiler.exe", "$file"]
+		"cmd": ["dotless.Compiler.exe", "$file"],
+		"path": "%APPDATA%\\Sublime Text 2\\Packages\\LESS-build" //Not sure why "${packages}\\LESS-build" doesn't work
 	}
 }
