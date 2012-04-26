@@ -25,3 +25,5 @@ The "Packages" directory is located at:
     `%APPDATA%/Sublime Text 2/Packages/`
 
 **Be aware:** On OSX you need lessc installed (via node.js / npm) and in your `PATH`. If you're having issues with this, look it up here [http://stackoverflow.com/questions/135688/setting-environment-variables-in-os-x](http://stackoverflow.com/questions/135688/setting-environment-variables-in-os-x).
+
+Includes (currently v1.3.0.2) https://github.com/dotless/dotless
