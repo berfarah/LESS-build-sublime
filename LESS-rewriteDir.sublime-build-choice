@@ -1,0 +1,31 @@
+{
+    "cmd": ["lessc", "$file", "${file_path/(.*)less(.*)/\\1css\\2/}/${file_base_name}.css", "--verbose"],
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    "selector": "source.css.less",
+
+    "osx":
+    {
+        "path": "/usr/local/bin:$PATH"
+    },
+
+    "windows":
+    {
+        "cmd": ["$packages\\LESS-build\\dotless.Compiler.exe", "$file", "${file_path/(.*)less(.*)/\\1css\\2/}\\\\${file_base_name}.css"]
+    },
+
+    "variants": [
+        {
+            "name": "Minify",
+            "cmd": ["lessc", "$file", "${file_path/(.*)less(.*)/\\1css\\2/}/${file_base_name}.min.css", "-x", "--verbose"],
+
+            "osx":
+            {
+                "path": "/usr/local/bin:$PATH"
+            },
+            "windows":
+            {
+                "cmd": ["$packages\\LESS-build\\dotless.Compiler.exe", "-m", "${file}", "${file_path/(.*)less(.*)/\\1css\\2/}\\\\${file_base_name}.min.css"]
+            }
+        }
+    ]
+}
