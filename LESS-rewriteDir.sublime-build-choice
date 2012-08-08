@@ -1,0 +1,33 @@
+{
+    "cmd": ["lessc", "$file", "${file_path/(.*)\\\\less\\\\(.*)/\\1\\\\css\\\\\\2/}\\\\${file_base_name}.css", "--verbose"],
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    "selector": "source.css.less",
+
+    "osx":
+    {
+        "path": "/usr/local/bin:$PATH"
+    },
+
+    "windows":
+    {
+        "cmd": ["dotless.Compiler.exe", "$file", "${file_path/(.*)\\\\less\\\\(.*)/\\1\\\\css\\\\\\2/}\\\\${file_base_name}.css"], //To store the code in the css folder (which must be in the same directory as the less folder), don't forget to uncomment the minify variant too.
+        "path": "%APPDATA%\\Sublime Text 2\\Packages\\LESS-build" //Not sure why "${packages}\\LESS-build" doesn't work
+    },
+
+    "variants": [
+        {
+            "name": "Minify",
+            "cmd": ["lessc", "$file", "${file_path/(.*)\\\\less\\\\(.*)/\\1\\\\css\\\\\\2/}\\\\${file_base_name}.min.css", "-x", "--verbose"],
+
+            "osx":
+            {
+                "path": "/usr/local/bin:$PATH"
+            },
+            "windows":
+            {
+                "cmd": ["dotless.Compiler.exe", "-m", "${file}", "${file_path/(.*)\\\\less\\\\(.*)/\\1\\\\css\\\\\\2/}\\\\${file_base_name}.min.css"],
+                "path": "%APPDATA%\\Sublime Text 2\\Packages\\LESS-build" //Not sure why "${packages}\\LESS-build" doesn't work
+            }
+        }
+    ]
+}
