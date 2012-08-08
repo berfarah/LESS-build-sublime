@@ -10,8 +10,8 @@
 
     "windows":
     {
-        "cmd": ["dotless.Compiler.exe", "$file", "${file_base_name}.css"], //To just store the css in the same folder as the less
-        "path": "%APPDATA%\\Sublime Text 2\\Packages\\LESS-build" //Not sure why "${packages}\\LESS-build" doesn't work
+        "cmd": ["$packages dotless.Compiler.exe", "$file", "${file_base_name}.css"], //To just store the css in the same folder as the less
+        //"path": "%APPDATA%\\Sublime Text 2\\Packages\\LESS-build" //Not sure why "${packages}\\LESS-build" doesn't work
     },
 
     "variants": [
