@@ -10,7 +10,7 @@
 
     "windows":
     {
-        "cmd": ["$packages\\LESS-build\\dotless.Compiler.exe", "$file", "${file_base_name}.css"], //To just store the css in the same folder as the less
+        "cmd": ["$packages\\LESS-build\\dotless.Compiler.exe", "$file", "${file_base_name}.css"] //To just store the css in the same folder as the less
     },
 
     "variants": [
