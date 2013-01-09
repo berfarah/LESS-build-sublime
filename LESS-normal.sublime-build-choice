@@ -16,7 +16,7 @@
     "variants": [
         {
             "name": "Minify",
-            "cmd": ["lessc", "$file", "{$file_path}/${file_base_name}.min.css", "-x", "--verbose"],
+            "cmd": ["lessc", "$file", "${file_path}/${file_base_name}.min.css", "-x", "--verbose"],
 
             "osx":
             {
