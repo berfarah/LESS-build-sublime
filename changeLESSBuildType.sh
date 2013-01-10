@@ -2,7 +2,6 @@
 PS3='Please enter your choice: '
 options=("Normal" "Normal-User" "Directory Rewrite" "Directory Rewrite-User" "Quit")
 select opt in "${options[@]}"
-
 do
     case $opt in
         "Normal")
@@ -25,7 +24,6 @@ do
             ln -s ../User/LESS-rewriteDir.sublime-build-choice LESS.sublime-build
             break;
             ;;
-
         "Quit")
             break
             ;;
