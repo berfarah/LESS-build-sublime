@@ -1,0 +1,79 @@
+[
+
+    {
+
+        "caption": "Preferences",
+
+        "mnemonic": "n",
+
+        "id": "preferences",
+
+        "children":
+
+        [
+
+            {
+
+                "caption": "Package Settings",
+
+                "mnemonic": "P",
+
+                "id": "package-settings",
+
+                "children":
+
+                [
+
+                    {
+
+                        "caption": "LESS-Build",
+
+                        "children":
+
+                        [
+
+                            {
+
+                                "command": "open_file",
+
+                                "args": {"file": "${packages}/User/LESS-normal.sublime-build-choice"},
+
+                                "caption": "Settings – User - Normal"
+
+                            },
+
+                            {
+
+                                "command": "open_file",
+
+                                "args": {"file": "${packages}/User/LESS-rewriteDir.sublime-build-choice"},
+
+                                "caption": "Settings – User - ReWrite Directory"
+
+                            },
+
+                            { "caption": "-" },
+
+                             {
+
+                                "command": "open_file",
+
+                                "args": {"file": "${packages}/LESS-build/readme.md"},
+
+                                "caption": "README"
+
+                            }
+
+                        ]
+
+                    }
+
+                ]
+
+            }
+
+        ]
+
+    }
+
+]
