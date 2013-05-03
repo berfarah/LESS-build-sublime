@@ -1,5 +1,5 @@
 {
-    "cmd": ["lessc", "$file", "${file_path/(.*)less(.*)/\\1css\\2/}/${file_base_name}.css", "--verbose"],
+    "cmd": ["lessc", "$file", "${file_path/(.*)less(.*)/\\1css\\2/}/${file_base_name}.css", "--verbose", "--no-color"],
     "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
     "selector": "source.css.less",
 
@@ -16,7 +16,7 @@
     "variants": [
         {
             "name": "Minify",
-            "cmd": ["lessc", "$file", "${file_path/(.*)less(.*)/\\1css\\2/}/${file_base_name}.min.css", "-x", "--verbose"],
+            "cmd": ["lessc", "$file", "${file_path/(.*)less(.*)/\\1css\\2/}/${file_base_name}.min.css", "-x", "--verbose", "--no-color"],
 
             "osx":
             {
