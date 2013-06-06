@@ -13,7 +13,7 @@ Once you install Package Control, restart ST2 and bring up the Command Palette (
 
 **With Git:** Clone the repository in your Sublime Text "Packages" directory:
 
-    git clone git://github.com/berfarah/LESS-sublime-build.git LESS
+    git clone https://github.com/berfarah/LESS-build-sublime.git LESS
 
 The "Packages" directory is located at:
 
