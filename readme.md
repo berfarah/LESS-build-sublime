@@ -1,6 +1,15 @@
 LESS build system package for Sublime Text 2
 ======================================
 
+
+### THIS REPO IS NOT BEING MAINTAINED
+Sorry for only putting this in the README now, after 4 years! But I'm still seing issues being opened. Since I don't use Sublime or LESS anymore I recommend you try one of the following:
+https://github.com/danro/LESS-sublime
+https://github.com/timdouglas/sublime-less2css
+
+Or search here for an adequate alternative:
+https://packagecontrol.io/search/less
+
 Provides two build systems for `.less` files, both minified and non-minified. Requires lessc (via node.js) on OSX and Linux.
 
 Installing
