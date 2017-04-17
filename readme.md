@@ -45,12 +45,12 @@ Go into your package directory (shown above), open the LESS-build directory, and
 
 There are currently two build choices; Normal and Directory Rewrite.
 
-####Normal
+#### Normal
 Saves the css or min.css file in the same directory as the less file
 An Example: building C:\someproject\less\components\buttons\border.less would put the css in C:\someproject\less\components\buttons\border.css
 
 
-####Directory Rewrite
+#### Directory Rewrite
 Saves the css or min.css file in the css directory, but with the same directory structure.
 An example: building C:\someproject\less\components\buttons\border.less would put the css in C:\someproject\css\components\buttons\border.css
 Note: The folder must be called less, and it will only go into css!
